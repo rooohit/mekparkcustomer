@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flfrag2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/carlinear"
+            android:background="@drawable/custom_button"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/back_btn"
+                    android:layout_width="21dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_icon_material_arrow_back">
+
+                </ImageView>
+
+
+
+                <TextView
+                    android:layout_marginTop="22dp"
+                    android:id="@+id/booking_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="26dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Add your details"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="33dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/home_background">
+
+                        <Button
+                            android:id="@+id/carbutton"
+                            android:layout_width="186dp"
+                            android:layout_height="37dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="CAR"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/home_background">
+
+                        <Button
+                            android:id="@+id/bikebutton"
+                            android:layout_width="186dp"
+                            android:layout_height="37dp"
+                            android:background="@drawable/custom_button2"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="BIKE"
+                            android:textColor="#9F9F9F"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="364dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:id="@+id/carbrand1"
+                        android:layout_width="364dp"
+                        android:layout_height="34dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Choose Brand"
+
+
+                        android:textColor="#9F9F9F" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="364dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:id="@+id/carmodel"
+                        android:layout_width="364dp"
+                        android:layout_height="34dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center_vertical"
+                        android:text="Choose Model"
+
+
+                        android:textColor="#9F9F9F" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="fuel Type"
+                    android:textColor="#CFCFCF" />
+
+
+                <LinearLayout
+                    android:id="@+id/linear_fuel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/petrol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:background="@color/light_background"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/fuel_linear1"
+                            android:layout_width="48dp"
+                            android:layout_height="61dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_group_2" />
+
+                            <TextView
+                                android:id="@+id/fueltxt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="11dp"
+                                android:background="#ffffff"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Petrol"
+                                android:textColor="#CFCFCF"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/diesle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:background="@color/light_background"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/fuel_linear2"
+                            android:layout_width="48dp"
+                            android:layout_height="61dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_icon_awesome_gas_pump" />
+
+                            <TextView
+                                android:id="@+id/fueltxt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="11dp"
+                                android:background="#ffffff"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Diesel"
+                                android:textColor="#CFCFCF"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:background="@color/light_background"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/fuel_linear3"
+                            android:layout_width="48dp"
+                            android:layout_height="61dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_group_1" />
+
+                            <TextView
+                                android:id="@+id/fueltxt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="11dp"
+
+                                android:background="#ffffff"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="CNG"
+                                android:textColor="#CFCFCF"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:background="@color/light_background"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/fuel_linear4"
+                            android:layout_width="48dp"
+                            android:layout_height="61dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_group_3" />
+
+                            <TextView
+                                android:id="@+id/fueltxt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="11dp"
+                                android:background="#ffffff"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Electric"
+                                android:textColor="#CFCFCF"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="364dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="38dp">
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:layout_width="364dp"
+                        android:layout_height="34dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Licence Plate Number"
+                        android:textColor="#9F9F9F" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="14dp"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginLeft="22dp"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Vehicle Insurance"
+                        android:textColor="#9F9F9F" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="190dp"
+                        android:thumb="@drawable/thumb"
+                        app:track="@drawable/track"
+                        />
+
+
+
+                </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="22dp"
+                            android:visibility="visible"
+                            android:id="@+id/VehicleInsurance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <TextView
+                            android:textColor="#404040"
+                            android:textSize="13dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Insurance due date"/>
+
+                            <TextView
+                                android:textColor="#404040"
+                                android:textSize="13dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Manufacturing year"/>
+
+                            <TextView
+                                android:textColor="#9F9F9F"
+                                android:textSize="13dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Input licence plate number"/>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:layout_width="114dp"
+                            android:background="@drawable/bcar"
+                            android:layout_height="114dp">
+
+
+                        <ImageView
+                            android:id="@+id/captureimage"
+                            android:layout_marginTop="38.12dp"
+                            android:layout_marginLeft="38.12dp"
+                            android:layout_width="39dp"
+                            android:layout_height="39dp"
+                            android:src="@drawable/ic_icon_feather_plus_circle"
+                            />
+                            <TextView
+                                android:layout_marginTop="11dp"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/colorRed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Upload Image"/>
+                        </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/Addvehicle"
+                    android:layout_width="246dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginRight="84dp"
+                    android:background="@color/colorRed"
+                    android:text="Add Vehicle"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
+
+
+

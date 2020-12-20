@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Confirm Date &amp; Time"
+        android:textColor="@color/white" />
+
+    <!--Horizontal calender-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/date1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/date1_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Wed"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/date1_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="17"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/date1_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sep"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--Horizontal liner-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="4dp"
+            android:background="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check-in Time :-   "
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gotham_book_regular"/>
+
+        <TextView
+            android:id="@+id/tv_hrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gotham_medium_regular"/>
+
+        <TextView
+            android:id="@+id/tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gotham_medium_regular"/>
+
+        <TextView
+            android:id="@+id/tv_ap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gotham_medium_regular"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/hrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <NumberPicker
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"/>
+
+        <NumberPicker
+            android:id="@+id/ap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:layout_marginLeft="99dp"
+            android:id="@+id/ok"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorRed"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
